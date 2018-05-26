@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
     <title>"Мишка" - Вязание на заказ</title>
+    <link href="styles/main.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="page-header">
-        <a class="page-header__logo">
-		<img class="page-header__logo-img" src="img/logo-mobile.png" width="86" height="35" alt="Магазин товаров ручной работы 'Мишка'">
-	</a>
-        <nav class="main-nav ">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-            <div class="main-nav__wrapper">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item">
-                        <a href="catalog.html">Каталог товаров</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">Вязание на заказ</a>
-                    </li>
-                    <li class="site-list__item site-list__item--search">
-                        <button class="site-list__button" type="button">Поиск по сайту</button>
-                    </li>
-                    <li class="site-list__item site-list__item--cart">
-                        <a href="#">
-                            <p class="site-list__text">Корзина:</p>
-                            <span class="site-list__text site-list__cart">Пока пуста</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="page-header__wrapper">
+            <a class="page-header__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86" height="35" viewBox="0 0 86 35">
+                    <image id="mishka-logo-mobile.svg_copy" data-name="mishka-logo-mobile.svg copy" width="86" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAjCAQAAACksDUOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBQ8MCyWmMXvnAAAEBklEQVRYw+2Y0XHbOBCGP2nyHnRwvAqMDkxVEHdgpYIoFZiuwHIFSiqQUoHoCkRXYKYC8SrAPXABLEFQ4l3Oc3Mzt3wguMDu/vsT2iUEc6TghMNRzFr9brKcCdbK/T8A9r2loJxDxF8D+ykbpsTMsl5zxrFPtIY9bxwpfy1fSymvv8ThcDypuR1vonU4zlQCfo/DZUP364+J9ojDiXVKw4aKiiqybtln8kWCHkP2R+VwJ3MVlQRzODbAWsYerGGH440iwBqCrXA4TglJTwMilL+TPBYJWJdx08tTMuN5r0LwCLZUz2OwhjMOx1ppduKr38U++b0G5dgl2Xl9hFRxpyz0i+vBW+DuKlin7PrU3kabYqM0J01NpFpzu0nAnhQr6f7VUk6AXWfAel4jtPUI/MBKV4O1Gt8mIMwIluWSpOsL4CXRbTBAx7eguQegnnKqwX4ZMDSUVo0nnWVSaSfnjMR7pkui/pwG2yg21sHI8PekS5492I9K1/v2vG4T/QVZDtzfy/3TNbNJaSb0luEbscLrVxXfXvM47GC+6d3NgDWX/TYL/F6si4srAf6IVh+SqTUV9kqfbmRvHfmhAh1GW8DPpN6M2nBf2AY7D/Y266ekQ3Wgvm0aKfr+sgKsn+2DnQYrnBScHpSv2iUlJZX0ojNgQoWulF2lAHkMR944yqV7mbRVJ53DUUn1Ow8qpl9VhDzjFT3EgOMrzu2Db0+Pl+OktcOxX1DxAMAq6dqfJfiKGtSqOvOKPKsLEFh1qKq3km6c6+VAJ5vhMbDrv71WQghAJ+1nRR27+TCvU9KL/NMmu592I/biy61Gc57PImyglNnhXg04YjUwfFVLGvJistpYxu2kfYkuXp/paDkAUITq03FRIlhLI8YAr8m6hnnik4lhcwC2EslXE1/XX7kowzr7PYzqZJ0ZPZcXv+1tNk0jGv8Ofblbz6vZQ7CHbAhIj4p3UlpSMZmRl5hap0Y+4uYq0hKWCYe9o+0VQzvBhA1J5gt7N9I8yv2eGZIeGFes+H3wUyuAuC1u1EwbRn62DHDyyYylFdtissXXcbhM3DbUSY8uBtD06lZZRU3v3I6CduQ/VZ7lPsWtj9jCcvIjuk6e2xDSiz/7WinbB/UZ3YSRURqTzPVWXZJeN5i/A+AbB/jAlt8o+DEC542j65oX2c2e03hobHgWqA3QBr48wJoaOGAGc57bBzoehaAmQVKzoukTWDAlhgcM3yfOBZtQGxteR1tnKAVcnP9f/nVZzFhjRj/C9h9+rYVqOvV8sBbLDXay7E9JHn436PYfk6TNxUr0AnQ0/selwZZYbn/hVPseUtPyE+Ln5oL+CB5B3owAN+HQxuQqc+VPj5x0qpno/wpq0HxG+RMIjRgWXXTKmQAAAABJRU5ErkJggg==" />
+                </svg>
+            </a>
+            <nav class="main-nav">
+                <button class="main-nav__toggle" type="button">Открыть меню</button>
+                <div class="main-nav__wrapper  ">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item">
+                            <a href="catalog.html">Каталог товаров</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="#">Вязание на заказ</a>
+                        </li>
+                        <li class="site-list__item site-list__item--search">
+                            <button class="site-list__button" type="button">Поиск по сайту</button>
+                        </li>
+                        <li class="site-list__item site-list__item--cart">
+                            <a href="#">
+                                <p class="site-list__text">Корзина:</p>
+                                <span class="site-list__text site-list__cart">Пока пуста</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main class="page__main knitting">
-        <div class="knitting__wrapper">
-            <h1 class="knitting__title">Вязание на заказ</h1>
-            <p class="knitting__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-            <form class="knitting__form" action="https://echo.htmlacademy.ru" method="get">
+        <div class="knitting__hero">
+                <h1 class="knitting__hero--title">Вязание на заказ</h1>
+            </div>
+        <div class="knitting__wrapper">     
+              <form class="knitting__form" action="https://echo.htmlacademy.ru" method="get">
+               <p class="knitting__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
                 <fieldset class="knitting__fieldset knitting__fieldset--type">
+                     
                     <legend class="knitting__legend">Тип</legend>
                     <label class="knitting__label knitting__label--radio">
                         <input class="knitting__radio knitting__radio--checked" type="radio" name="accessoire" checked>Аксессуар для интерьера</label>
@@ -92,26 +99,58 @@
         </div>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__wraper">
-            <div class="page-footer__social social">
-                <ul class="social__list">
-                    <li class="social__link">
-                        <a class="social__link social__link--instagram" href="https://instagram.com/htmlacademy">Мы в Инстаграм</a>
-                    </li>
-                    <li class="social__link">
-                        <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">Мы в Фэйсбуке</a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы Вконтакте</a>
-                    </li>
-                </ul>
+            <div class="page-footer__wrapper">
+                <a class="page-footer__logo" href="https://htmlacademy.ru">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="34" viewBox="0 0 102 34">
+                        <image id="logo-footer.svg" width="102" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAAiCAMAAACayFwqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAACSUWGxAAAAEHRSTlMAYN/vML+AUBBwryBAz4+fDwva1QAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBRYMLjQJY5PnAAAC/UlEQVRIx+WXy2KtIAxFBSQioPD/X1shD4La097BHZVJjzyyQnYCdFlem7HVrct/b77WCn8QswEE+Qh79OkfMZ4/1rwD7BmthZyDmhiviVkoR61H+I39YGAlzNk7cnGVWus4tdmrVfV9o6QM4H00OFacMzJkrlWlhcJ7wNFaXbmmd45RZq91LawaU9TvXCx7F3nMTsGKbzFZHaolZncMazO2k+UR6HTZiZDX1KzXFh6n/emrBnRZx2dzYFMYQKMqV4ZMzaeCnQ6D0NeJ2qF/tR9wtM7m4MEZtaflthurMWm4dAxfeRzjRxW/Mcbg30yfs+Qbh6jqXCnkNy6GV0wZIna7+TuMeE9DJ8dCbUYn+YypQaSpbhgJP2KAMWMz3WRS8wv95WxZRSjehgroDZNQJcaozSzaN65zwhwsK/7UGF2NPSCnGMuo5ryZpHcTZ0z3+ag3bZ4YCRIN0UQzAj8v4vlQJQlSfcXEd4zt4aOJPXfgFxgXKGYTpu25Wt9bP4kHBlXqSZITmxCMURgLWTDXkmPEbyWPEvd10QIuO3I2AFadPoVNjHzFFSwJutcGXC953rB4tOarrTlSYKHqRhgVEd7n3DxiuoLt+NkZY+vtXotYUSBBtMh1uNKZsZ2eXVuG0/vCZ2fHBL5TEmOme03KMfXpoMX1vC9Pla31GyJjH6lvJUvgjkGt1VE5YQ7KafMJY1m2+D1muWPUEV1dq0bHyf+G0fV1GfiMSQqjjmiskoIzPmICpfITk/CJkYbVB+YcHfAZg14tD8xqKRIZ3bhhgk5Jvno/YQCFvGOAnU1DG/8uliSBxnDqMsbYfpowZld0UGcYSNo+Mb0s/E3XG4YaPWC4TPrtuEnRgeDfMH0y1dYds80YfkFRmfCDhhJp116hNmMCRWifMIF2v88YudvpiBKswUdRlqBto+DkRjrk/DoX0ct2L87DbwPDt+BaXRSN6PzL1L+J4ND8sOPsu9DXv0XXo1Yu9pRfn+6nXrXg67a5HffH9Gye/2ilvLy2L1jlWQBgUWLiAAAAAElFTkSuQmCC" />
+                    </svg>
+                </a>
+                <div class="page-footer__social social">
+                    <ul class="social__list">
+                        <li class="social__link">
+                            <a class="social__link social__link--instagram" href="https://instagram.com/htmlacademy">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="21" viewBox="0 0 22 21">
+                                    <image id="insta.svg" width="22" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAMAAAB1/u6nAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAiHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8AAAChcy5EAAAAEHRSTlMAYM+/gHAQn+/fjzBAUCCvibRMeAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBQ8MFCli3TlSAAAA4klEQVQY002RiY7EMAhDCZDmTv3/XzsO0+2OFanilcMkkhQhe+WeLwkEKMxLNbV2QBYCpHPc+0h5Fma1IuDvBUz0kfecyaKfwIHNMvgeM+ticWnEWmGVrZrxE+IcQY1QvZh1MoaBVURyzSdTGzOHMFUaiPWO4utqhkIMsYNxyuEiZmgvnscO0JYo/QV2Npu0/YjbMDx4/uJEC/vBG26PZTsTiG/UIQW8J3r2QjvPSOyLNbWUdWvQHVhtrz3CeS2kkgJXHXUl+ZfHSHT11nd9MXeT8X0e3o/+vVo9m/bvO/3K8gfpfxCsNsM8+AAAAABJRU5ErkJggg==" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__link">
+                            <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="29" viewBox="0 0 15 29">
+                                    <image id="fb.svg" width="15" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAdCAMAAABCFsboAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAiHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8AAAChcy5EAAAAEHRSTlMAIHCAMBCvn8/vj0BQv99ghC/KTQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBQ8MFDFxsaEEAAAAsElEQVQY01XR2xLDIAgE0FVi1CDJ/v/XFi9tKi/OcUR2FBgVonjFYyqdXJUHC+slqk0quzNLmAenjbcCT2+6p5lSdVV7pk80mmKV8UCk4DWgvH7Ow+XJZwKi5NvP64gTgbFK35fcV99UDeseH3GzmDUPreIxgNaDyJF+6QBhoRpltblZ02h+LWUzH+5Ou0/8Wfuk3RW2+fq33x2wz4/u9nUjrfJ9sPEWRdLXwb9u/Rw+MG0K1lJrqBoAAAAASUVORK5CYII=" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--twiiter" href="https://vk.com/htmlacademy">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="20" viewBox="0 0 24 20">
+                                    <image id="twitter.svg" width="24" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAMAAACgaw2xAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAiHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8AAAChcy5EAAAAEHRSTlMAQK8QUO/fYL9wnyCAz48wIb7VYQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBQ8MFDrmY3iMAAAAwUlEQVQY021QW7LFIAjDB0IV2+x/tQdttb0zlx8whEwM0T8VEGaP8QMmoszlHgFZVAXAwM3MUBxzqog5jGU8mj8NSdFd1TikaETjzBsdzheGBhVqzEOCa5oXaJSq0/yqDT/IU1lvc+2ctFFTiEievqstoPD1ZxHXQpbxpYTrCQA9f3BBX5IsX62+g8geAm/coG9wgfua/XdtJSe1bMcXP5F7IF5dXvx8Rw5L8sTGfeNhFj3NLLqHr28KpmUIgi1t8Ad9NQf9ckdSWAAAAABJRU5ErkJggg==" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-footer__copyright copyright">
+                    <b class="copyright__text">Разработано</b>
+                    <a class="copyright__link" href="https://htmlacademy.ru">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" viewBox="0 0 27 34">
+                            <image id="htmlacademy.svg" width="27" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAMAAACZf1ICAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAABZNXjjAAAAEXRSTlMAADBAUIC/368gYO8Qn49wz6Cmyx0AAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gUPDBUJQKgo2wAAAUdJREFUKM91k1uiwyAIRIkKvpOw/81eQGNy29S/9AgOMxRAjvMBkSgyc6SEGHze5AARvx8iYLtMiMU7aeF90RZVfxbW4Hm2eZoxeGXbBwvJ/2CZuHJvL6ztXAtgrccXK5V3FZU7R/+POWJyU4snTnmx0e7WKT2wDXbMdvcMDTkGY6sdAOGUmWn40u8Bj1rLlNlHXV8d0SfpIsSfow654mSJMZy8u369p4ZEb8xhjeFgudzWfCHKTKolSVPJhx6z717MwqZ3LOon66wFMcA+M3+wXKTMR678zYjcLmX4xqQExWM6B7Ik7oxESwnRSMXPbLM4Ym5cyRs7x9xgWs4R7CYfLPbK1TztjAesGDRSSfY21PKT+FjThbERl6HKVBLpVsC1ScPQeTFYZ1gbqG3mA1Ppekefj2j11/Y+/gk2+lzOTwYNRe+Ntj/MExhRWV/rJgAAAABJRU5ErkJggg==" />
+                        </svg>
+                    </a>
+                </div>
             </div>
-            <div class="footer__copyrigth copyright">
-                <b class="copyright__text">Разработано</b>
-                <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+        </footer>
+        <div class="modal visually-hidden">
+            <div class="modal__wrapper">
+                <h2 class="modal__title">Добавить в корзину</h2>
+                <div class="modal__buttons">
+                    <button class="modal__size" type="button">S</button>
+                    <button class="modal__size" type="button">M</button>
+                    <button class="modal__size" type="button">L</button>
+                </div>
+                <button class="button modal__add">Добавить</button>
             </div>
         </div>
-    </footer>
 </body>
 
 </html>
