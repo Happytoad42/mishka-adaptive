@@ -64,6 +64,12 @@ body {
   height: 1px;
   margin: -1px; }
 
+.test {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background-color: red; }
+
 .page-header__wraper {
   display: -webkit-flex;
     display-display: -moz-flex;

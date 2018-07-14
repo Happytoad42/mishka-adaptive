@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-<meta charset="utf-8">
-<title>Мишка - милые штучки ручной работы для дома</title>
-<link href="styles/main.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Мишка - милые штучки ручной работы для дома</title>
+    <link href="styles/main-min.css" rel="stylesheet">
 </head>
 
 <body>
+    <svg style="display: none">
+        <symbol viewBox="0 0 27 34">
+            <image id="htmlacademy" width="27" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAMAAACZf1ICAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAABZNXjjAAAAEXRSTlMAADBAUIC/368gYO8Qn49wz6Cmyx0AAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gUPDBUJQKgo2wAAAUdJREFUKM91k1uiwyAIRIkKvpOw/81eQGNy29S/9AgOMxRAjvMBkSgyc6SEGHze5AARvx8iYLtMiMU7aeF90RZVfxbW4Hm2eZoxeGXbBwvJ/2CZuHJvL6ztXAtgrccXK5V3FZU7R/+POWJyU4snTnmx0e7WKT2wDXbMdvcMDTkGY6sdAOGUmWn40u8Bj1rLlNlHXV8d0SfpIsSfow654mSJMZy8u369p4ZEb8xhjeFgudzWfCHKTKolSVPJhx6z717MwqZ3LOon66wFMcA+M3+wXKTMR678zYjcLmX4xqQExWM6B7Ik7oxESwnRSMXPbLM4Ym5cyRs7x9xgWs4R7CYfLPbK1TztjAesGDRSSfY21PKT+FjThbERl6HKVBLpVsC1ScPQeTFYZ1gbqG3mA1Ppekefj2j11/Y+/gk2+lzOTwYNRe+Ntj/MExhRWV/rJgAAAABJRU5ErkJggg==" />
+        </symbol>
+    </svg>
     <header class="page-header">
-        <div class="page-header__wrapper">
-            <a class="page-header__logo">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86" height="35" viewBox="0 0 86 35">
-                    <image id="mishka-logo-mobile.svg_copy" data-name="mishka-logo-mobile.svg copy" width="86" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAjCAQAAACksDUOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBQ8MCyWmMXvnAAAEBklEQVRYw+2Y0XHbOBCGP2nyHnRwvAqMDkxVEHdgpYIoFZiuwHIFSiqQUoHoCkRXYKYC8SrAPXABLEFQ4l3Oc3Mzt3wguMDu/vsT2iUEc6TghMNRzFr9brKcCdbK/T8A9r2loJxDxF8D+ykbpsTMsl5zxrFPtIY9bxwpfy1fSymvv8ThcDypuR1vonU4zlQCfo/DZUP364+J9ojDiXVKw4aKiiqybtln8kWCHkP2R+VwJ3MVlQRzODbAWsYerGGH440iwBqCrXA4TglJTwMilL+TPBYJWJdx08tTMuN5r0LwCLZUz2OwhjMOx1ppduKr38U++b0G5dgl2Xl9hFRxpyz0i+vBW+DuKlin7PrU3kabYqM0J01NpFpzu0nAnhQr6f7VUk6AXWfAel4jtPUI/MBKV4O1Gt8mIMwIluWSpOsL4CXRbTBAx7eguQegnnKqwX4ZMDSUVo0nnWVSaSfnjMR7pkui/pwG2yg21sHI8PekS5492I9K1/v2vG4T/QVZDtzfy/3TNbNJaSb0luEbscLrVxXfXvM47GC+6d3NgDWX/TYL/F6si4srAf6IVh+SqTUV9kqfbmRvHfmhAh1GW8DPpN6M2nBf2AY7D/Y266ekQ3Wgvm0aKfr+sgKsn+2DnQYrnBScHpSv2iUlJZX0ojNgQoWulF2lAHkMR944yqV7mbRVJ53DUUn1Ow8qpl9VhDzjFT3EgOMrzu2Db0+Pl+OktcOxX1DxAMAq6dqfJfiKGtSqOvOKPKsLEFh1qKq3km6c6+VAJ5vhMbDrv71WQghAJ+1nRR27+TCvU9KL/NMmu592I/biy61Gc57PImyglNnhXg04YjUwfFVLGvJistpYxu2kfYkuXp/paDkAUITq03FRIlhLI8YAr8m6hnnik4lhcwC2EslXE1/XX7kowzr7PYzqZJ0ZPZcXv+1tNk0jGv8Ofblbz6vZQ7CHbAhIj4p3UlpSMZmRl5hap0Y+4uYq0hKWCYe9o+0VQzvBhA1J5gt7N9I8yv2eGZIeGFes+H3wUyuAuC1u1EwbRn62DHDyyYylFdtissXXcbhM3DbUSY8uBtD06lZZRU3v3I6CduQ/VZ7lPsWtj9jCcvIjuk6e2xDSiz/7WinbB/UZ3YSRURqTzPVWXZJeN5i/A+AbB/jAlt8o+DEC542j65oX2c2e03hobHgWqA3QBr48wJoaOGAGc57bBzoehaAmQVKzoukTWDAlhgcM3yfOBZtQGxteR1tnKAVcnP9f/nVZzFhjRj/C9h9+rYVqOvV8sBbLDXay7E9JHn436PYfk6TNxUr0AnQ0/selwZZYbn/hVPseUtPyE+Ln5oL+CB5B3owAN+HQxuQqc+VPj5x0qpno/wpq0HxG+RMIjRgWXXTKmQAAAABJRU5ErkJggg==" />
-                </svg>
-            </a>
-            <nav class="main-nav">
-                <button class="main-nav__toggle" type="button">Открыть меню</button>
-                <div class="main-nav__wrapper  ">
-                    <ul class="main-nav__list site-list">
-                        <li class="site-list__item">
-                            <a href="catalog.html">Каталог товаров</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="#">Вязание на заказ</a>
-                        </li>
-                        <li class="site-list__item site-list__item--search">
-                            <button class="site-list__button" type="button">Поиск по сайту</button>
-                        </li>
-                        <li class="site-list__item site-list__item--cart">
-                            <a href="#">
-                                <p class="site-list__text">Корзина:</p>
-                                <span class="site-list__text site-list__cart">Пока пуста</span>
+        <nav class="main-nav">
+            <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--logo">
+                    <a href="#" class="page-header__logo">
+                        <object class="page-header__logo--image" data="svg/mishka-logo-mobile.svg" type="image/svg+xml"></object>
+                    </a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__item--text" href="catalog.html">Каталог товаров</a>
+                </li>
+                <li class="site-list__item">
+                    <a class="site-list__item--text" href="#">Вязание на заказ</a>
+                </li>
+                <li class="site-list__item site-list__item--search">
+                    <a class="site-list__item--text" href="#">Поиск по сайту</a>
+                </li>
+                <li class="site-list__item site-list__item--cart">
+                    <a class="site-list__item--text" href="#">Корзина:                                
                             </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+                    <span class="site-list__text site-list__cart"> пока пуста</span>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main class="page-main">
         <section class="main-header">
-            <div class="main-header__hero" style="background-image: url(img/hero-mobile.jpg)">
-                <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
+            <div class="main-header__hero">
+                <div class="main-header__hero--text">
+                    <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
+                </div>
             </div>
             <div class="main-header__container">
                 <div class="main-header__button main-header__button--interior">
@@ -173,11 +176,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="page-footer__copyright copyright">
-                <b class="copyright__text">Разработано</b>
+            <div class="page-footer__copyright copyright">                
                 <a class="copyright__link" href="https://htmlacademy.ru">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" viewBox="0 0 27 34">
-                        <image id="htmlacademy.svg" width="27" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAMAAACZf1ICAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAABZNXjjAAAAEXRSTlMAADBAUIC/368gYO8Qn49wz6Cmyx0AAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gUPDBUJQKgo2wAAAUdJREFUKM91k1uiwyAIRIkKvpOw/81eQGNy29S/9AgOMxRAjvMBkSgyc6SEGHze5AARvx8iYLtMiMU7aeF90RZVfxbW4Hm2eZoxeGXbBwvJ/2CZuHJvL6ztXAtgrccXK5V3FZU7R/+POWJyU4snTnmx0e7WKT2wDXbMdvcMDTkGY6sdAOGUmWn40u8Bj1rLlNlHXV8d0SfpIsSfow654mSJMZy8u369p4ZEb8xhjeFgudzWfCHKTKolSVPJhx6z717MwqZ3LOon66wFMcA+M3+wXKTMR678zYjcLmX4xqQExWM6B7Ik7oxESwnRSMXPbLM4Ym5cyRs7x9xgWs4R7CYfLPbK1TztjAesGDRSSfY21PKT+FjThbERl6HKVBLpVsC1ScPQeTFYZ1gbqG3mA1Ppekefj2j11/Y+/gk2+lzOTwYNRe+Ntj/MExhRWV/rJgAAAABJRU5ErkJggg==" />
+                    <b class="copyright__text">Разработано</b>
+                    <svg width="27" height="34" class="test">
+                        <use xlink:href="#htmlacademy"/>
                     </svg>
                 </a>
             </div>
