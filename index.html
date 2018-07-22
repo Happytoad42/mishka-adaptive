@@ -4,46 +4,60 @@
 <head>
     <meta charset="utf-8">
     <title>Мишка - милые штучки ручной работы для дома</title>
-    <link href="styles/main-min.css" rel="stylesheet">
+    <link href="styles/main-min.css" rel="stylesheet">    
 </head>
-
 <body>
     <svg style="display: none">
         <symbol viewBox="0 0 27 34">
             <image id="htmlacademy" width="27" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAMAAACZf1ICAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEVj0bv///9j0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0btj0bsAAABZNXjjAAAAEXRSTlMAADBAUIC/368gYO8Qn49wz6Cmyx0AAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gUPDBUJQKgo2wAAAUdJREFUKM91k1uiwyAIRIkKvpOw/81eQGNy29S/9AgOMxRAjvMBkSgyc6SEGHze5AARvx8iYLtMiMU7aeF90RZVfxbW4Hm2eZoxeGXbBwvJ/2CZuHJvL6ztXAtgrccXK5V3FZU7R/+POWJyU4snTnmx0e7WKT2wDXbMdvcMDTkGY6sdAOGUmWn40u8Bj1rLlNlHXV8d0SfpIsSfow654mSJMZy8u369p4ZEb8xhjeFgudzWfCHKTKolSVPJhx6z717MwqZ3LOon66wFMcA+M3+wXKTMR678zYjcLmX4xqQExWM6B7Ik7oxESwnRSMXPbLM4Ym5cyRs7x9xgWs4R7CYfLPbK1TztjAesGDRSSfY21PKT+FjThbERl6HKVBLpVsC1ScPQeTFYZ1gbqG3mA1Ppekefj2j11/Y+/gk2+lzOTwYNRe+Ntj/MExhRWV/rJgAAAABJRU5ErkJggg==" />
         </symbol>
     </svg>
+    <!-- Begin header -->
     <header class="page-header">
-        <nav class="main-nav">
-            <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
-            <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item--logo">
-                    <a href="#" class="page-header__logo">
-                        <object class="page-header__logo--image" data="svg/mishka-logo-mobile.svg" type="image/svg+xml"></object>
-                    </a>
-                </li>
-                <li class="site-list__item">
-                    <a class="site-list__item--text" href="catalog.html">Каталог товаров</a>
-                </li>
-                <li class="site-list__item">
-                    <a class="site-list__item--text" href="#">Вязание на заказ</a>
-                </li>
-                <li class="site-list__item site-list__item--search">
-                    <a class="site-list__item--text" href="#">Поиск по сайту</a>
-                </li>
-                <li class="site-list__item site-list__item--cart">
-                    <a class="site-list__item--text" href="#">Корзина:                                
-                            </a>
-                    <span class="site-list__text site-list__cart"> пока пуста</span>
-                </li>
-            </ul>
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+            <a href="#" class="page-header__logo">
+                <object class="page-header__logo--image" data="svg/mishka-logo-mobile.svg" type="image/svg+xml"></object>
+            </a>
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a class="main-nav__item--text" href="catalog.html">Каталог товаров</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__item--text" href="#">Вязание на заказ</a>
+                    </li>
+                </ul>
+                <ul class="user-nav__list">
+                    <li class="user-nav__item user-nav__item--search">
+                        <a class="user-nav__item--text user-nav__item--search" href="#">
+                            <object class="user-nav__icon icon--search" data="svg/search.svg" type="image/svg+xml" width="20px" height="20px"></object>
+                            <span>Поиск по сайту</span></a>
+                    </li>
+                    <li class="user-nav__item user-nav__item--cart">
+                        <a class="user-nav__item--text" href="#">
+                            <object class="user-nav__icon icon--cart" data="svg/cart.svg" type="image/svg+xml" width="20px" height="20px"></object>
+                            Корзина: пока пуста
+                        </a>
+                    </li>
+                </ul>
+                <ul class="adv-nav__list">
+                    <li class="adv-nav__item">
+                        <a class="adv-nav__link href=" # ">Новые поступления</a>
+                    </li>
+                    <li class="adv-nav__item ">
+                        <a class="adv-nav__link href="#">Распродажа</a>
+                    </li>
+                </ul>
+                <span class="main-nav__delivery">Бесплатная доставка по России</span>
+            </div>
         </nav>
     </header>
     <main class="page-main">
         <section class="main-header">
             <div class="main-header__hero">
                 <div class="main-header__hero--text">
-                    <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
+                    <h1 class="main-header__title">Милые штуки ручной<br> работы для дома</h1>
                 </div>
             </div>
             <div class="main-header__container">
@@ -176,7 +190,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="page-footer__copyright copyright">                
+            <div class="page-footer__copyright copyright">
                 <a class="copyright__link" href="https://htmlacademy.ru">
                     <b class="copyright__text">Разработано</b>
                     <svg width="27" height="34" class="test">
@@ -197,6 +211,22 @@
             <button class="button modal__add">Добавить</button>
         </div>
     </div>
+    <script>
+        var navMain = document.querySelector('.main-nav');
+        var navToggle = document.querySelector('.main-nav__toggle');
+
+        navMain.classList.remove('main-nav--nojs');
+
+        navToggle = addEventListener('click', function() {
+            if (navMain.classList.contains('main-nav--closed')) {
+                navMain.classList.remove('main-nav--closed');
+                navMain.classList.add('main-nav--opened');
+            } else {
+                navMain.classList.remove('main-nav--opened');
+                navMain.classList.add('main-nav--closed');
+            }
+        });
+    </script>
 </body>
 
 </html>
